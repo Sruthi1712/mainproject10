@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In</title>
+  <link rel="stylesheet" href="{% static 'CSS/SignIn.css' %}">
+</head>
+<body>
+  <header>
+    <div class="logo" style="position: relative;left: 2%;"><img src="../static/Images/img1.webp" alt="" style="width: 20px;height:22px;position: relative;right: 4px;">Sheryians Coding School</div>
+    <nav>
+      <a href="{% url 'myapp:home' %}">Home</a>
+      <a href="{% url 'myapp:courses' %}">Courses</a>
+      <a href="{% url 'myapp:bootcamp' %}">Bootcamp</a>
+      <a href="{% url 'myapp:requested' %}">Callback</a>
+      <a href="{% url 'myapp:signin' %}" class="sign-in-btn">Sign In</a>
+    </nav>
+  </header>
+  <section class="sign-in-section">
+    <h1>Sign In</h1>
+    <div class="tabs">
+      <button class="active" id="phone-tab">Phone</button>
+      <button id="email-tab">Email</button>
+    </div>
+    <form id="sign-in-form">
+      <input type="text" id="input-field" placeholder="Enter Your Mobile Number" required>
+      <div class="divider">
+        <span>Or</span>
+      </div>
+      <button type="button" class="google-btn">
+        <img src="../static/Images/googlelogoIcon.png" alt="Google Logo" width="20">
+        Continue with Google
+      </button>
+      <button type="button" class="new-account-btn">Create a New Account</button>
+    </form>
+  </section>
+  <script>
+    const phoneTab = document.getElementById('phone-tab');
+    const emailTab = document.getElementById('email-tab');
+    const inputField = document.getElementById('input-field');
+    phoneTab.addEventListener('click', () => {
+      phoneTab.classList.add('active');
+      emailTab.classList.remove('active');
+      inputField.placeholder = 'Enter Your Mobile Number';
+      inputField.type = 'text';
+    });
+    emailTab.addEventListener('click', () => {
+      emailTab.classList.add('active');
+      phoneTab.classList.remove('active');
+      inputField.placeholder = 'Enter Your Email Address';
+      inputField.type = 'email';
+    });
+  </script>
+</body>
+</html>

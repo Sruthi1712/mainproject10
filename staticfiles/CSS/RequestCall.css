@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #0d0d0d;
+    color: #ffffff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  h5{
+      font-weight: lighter;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+  }
+
+  .callback-modal {
+    background-color: #1c1c1c;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    width: 350px;
+    position: relative;
+    z-index: 20;
+  }
+
+  .callback-modal h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+  }
+
+  .callback-modal form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .callback-modal label {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #ffffff;
+  }
+
+  .callback-modal input, .callback-modal select {
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: #ffffff;
+  }
+
+  .callback-modal input[type="submit"] {
+    background-color: #24cfa6;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .callback-modal input[type="submit"]:hover {
+    background-color: #24cfa6;
+  }
+
+  .container {
+    text-align: center;
+    position: relative;
+    filter: blur(0);
+    pointer-events: none;
+  }
+
+  .container h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 1rem;
+  }
+
+  .container p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #cccccc;
+  }
+
+  .stats {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.9rem;
+    color: #cccccc;
+  }
+  #close_icon{
+      color: white;
+      font-size: 30px;
+      font-weight: lighter;
+      transform: rotate(45deg);
+      position: absolute;
+      top: 2%;
+      left: 90%;
+  }
+  #close_icon:hover{
+      cursor: pointer;
+      transform: rotate(765deg) scale(1.5);
+  }
+
+  .stats span {
+    display: inline-block;
+    margin-right: 1.5rem;
+  }

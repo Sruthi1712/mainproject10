@@ -1,0 +1,83 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootcamp Program</title>
+    <link rel="stylesheet" href="{% static 'CSS/Courses.css' %}">
+</head>
+<body>
+    <div class="container">
+        <header class="navbar">
+            <div class="logo"><img id="logo_img" src="../static/Images/img1.webp" alt="">Sheryians coding school</div>
+            <nav class="anchors">
+                <a href="{% url 'myapp:home' %}">Home</a>
+                <a href="{% url 'myapp:courses' %}">Courses</a>
+                <a href="{% url 'myapp:bootcamp' %}">Bootcamp(Kodr)</a>
+                <a href="{% url 'myapp:requested' %}">Request Callback</a>
+                <a href="{% url 'myapp:signin' %}" class="sign-in">Sign In</a>
+            </nav>
+        </header>
+    </div>
+    <h1 class="main_heading">
+        <span>We're not a <span class="text_highlight">course factory.</span><br>
+    </h1>
+    <h1 class="small_heading">We focus on courses that really help.</h1>
+    <h1 class="short_heading">Courses which do work ↓</h1>
+    <div class="img_div"><img class="images" src="../static/Images/sheryians1_1.webp" alt=""><span id="div_">Front End Domination:<br>Create Anything with Code<button class="btn">HINDI</button><br><br><br><span class="color">Limited Time Discount<br><span class="number">₹ 4999</span><del class="cross_number">₹9999</del><button class="percentage">50% off</button></span></span></div> 
+    <div class="img_div"><img class="images" src="../static/Images/sheryians1_2.webp" alt=""><span id="div_">Back End Domination:<br>Create Efficient Back End.<button class="btn">HINDI</button><br><br><br><span class="color">Limited Time Discount<br><span class="number">₹ 5999</span><del class="cross_number">₹11999</del><button class="percentage">50% off</button></span></span></div>
+    <div class="img_div"><img class="images" src="../static/Images/sheryians1_3.webp" alt=""><span id="div_">Apptitude & Reasoning for<br>Campus Placements<br><button class="btn">HINGLISH</button><br><br><br><span class="color">Limited Time Discount<br><span class="number">₹ 999</span><del class="cross_number">₹1500</del><button class="percentage">33% off</button></span></span></div>
+    <div class="img_div"><img class="images" src="../static/Images/sheryians1_4.webp" alt=""><span id="div_">Java & DSA Domination<button class="btn">HINGLISH</button><br><br><br><br><span class="color">Limited Time Discount<br><span class="number">₹ 4999</span><del class="cross_number">₹9999</del><button class="percentage">50% off</button></span></span></div>
+    <div class="view">View Details</div>
+    <div class="view">View Details</div>
+    <div class="view">View Details</div>
+    <div class="view">View Details</div>
+    <div class="img_div"><img class="images" src="../static/Images/sheryians2_1.webp" alt=""><span id="div_">Java & DSA Domination<button class="btn">HINDI</button><br><br><span class="color">Limited Time Discount<br><span class="number">₹ 2499</span><del class="cross_number">₹3500</del><button class="percentage">29% off</button></span></span>
+        <div class="views">View Details</div></div>
+    <br><br><br><br><br>
+    <div>
+        <hr id="hr1">
+        <div class="image">
+            <img class="pro_logo" src="../static/Images/img1.webp" alt="">
+            <div class="connect">Let's connect with our socials</div>
+            <img class="social_media" src="../static/Images/pngwing.com (3).png" alt="">
+        </div>
+        <div>
+            <h1 class="comp">COMPANY</h1>
+            <div class="headings"><br>
+                <a href="">About Us</a><br>
+                <a href="">Support</a><br>
+                <a href="">Privacy Policy</a><br>
+                <a href="">Terms and Condition</a><br>
+                <a href="">Pricing and Refund</a><br>
+                <a href="">Hire From Us</a><br>
+                <a href="">Bug Bounty</a>
+            </div>
+        </div>
+        <div>
+            <h1 class="community">COMMUNITY</h1>
+            <div class="comm_headings"><br>
+                <a href="">Inertia</a><br>
+                <a href="">Discord</a><br>
+            </div>
+        </div>
+        <div>
+            <h1 class="get">Get In Touch</h1>
+            <div class="get_headings"><br>
+                <a href="">+917882686877,</a><br>
+                <a href="">+917734863762</a><br>
+                <a href="">hello@sheryians.com</a><br>
+                <a href="">23-B,Indrapuri Sector C,</a>
+                <a href="">Bhopal(MP),462021</a>
+            </div>
+        </div>
+    </div>
+    <hr id="hr2">
+    <center>
+        <h1 class="footer">Copyright © 2024 Sheryians Pvt. Ltd.</h1>
+        <h1 class="footer">All Rights Reserved.</h1>
+    </center>
+        
+</body>
+</html>

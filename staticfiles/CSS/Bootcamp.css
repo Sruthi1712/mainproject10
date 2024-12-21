@@ -1,0 +1,264 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    height: 1000px;
+}
+.container {
+    padding: 20px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    background-color: transparent;
+    backdrop-filter: blur(200px);
+    position: fixed;
+}
+.anchors{
+    position: relative;
+    left: 100%;
+    /* background-color: transparent;
+    backdrop-filter: blur(1500px); */   
+}
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+}
+#logo_img{
+    width: 20px;
+    height: 30px;
+    position: relative;
+    top: 5px;
+    right: 10px;
+}
+
+.navbar nav a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.sign-in {
+    background-color: #24cfa6;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 60px;
+    margin-left: 50px;
+}
+.info {
+    max-width: 45%;
+}
+.info h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.details button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.details .verified {
+    color: #24cfa6;
+    margin-left: 5px;
+}
+.price {
+    font-size: 40px;
+    margin-top: 50px;
+}
+.highlight {
+    color: #24cfa6;
+    font-weight: bold;
+    font-size: 40px;
+}
+.seats-full {
+    background-color: #24cfa6;
+    color: #fff;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: not-allowed;
+}
+
+.video iframe {
+    border-radius: 10px;
+    margin-top: 50px;
+}
+.belief-section {
+    /* text-align: center; */
+    margin: 100px 0;
+    width: 90%;
+    margin-left: 40px;
+}
+.belief-section span {
+    font-size: 100px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 1;
+}
+.belief-section .highlight-green {
+    color: #24cfa6;
+}
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+.feature {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 90px;
+    border-radius: 30px;
+    font-size: 25px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    white-space: nowrap;
+    transition: transform 0.2s;
+}
+.feature:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover*/
+}
+.coding-schedule {
+    /* text-align: center; */
+    margin: 50px 0;
+    width: 50%;
+    margin-left: 80px;
+    margin-top: 50px;
+}
+.coding-schedule h1 {
+    font-size: 150px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 1.2;
+    margin: 0;
+}
+.coding-schedule .highlight-green {
+    color: #24cfa6; /* Green color to emphasize "5 Hours" */
+}
+.coding-schedule .everyday{
+    font-size: 45px;
+}
+.coding-schedule .subtext {
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+.coding-schedule .header {
+    margin-top: 15px;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #fff; 
+}
+.dominate-schedule  {
+    margin: 50px 0;
+    width: 55%;
+    margin-left: 80px;
+    margin-top: 15%;
+}
+.dominate-schedule .dominate {
+    font-size: 200px;
+}
+.dominate-schedule .header{
+    margin-top: -20vh;
+    color: gray;
+    font-size: 80px;
+}
+select{
+    width: 88%;
+    height: 70px;
+    background-color: #121212;
+    color: white;
+    padding: 15px;
+    border: none;
+    margin-left: 5%;
+    font-size: 25px;
+}
+hr{
+    width: 89%;
+}
+.hr{
+    margin-right: 90px;
+    margin-top: 8%;
+    border-color: gray;
+    border-top: thistle;
+    width: 90%;
+    transform: translate(2.5%);
+}
+.pro_logo{
+    width: 40px;
+    height: 55px;
+    margin-top: 90px;
+    margin-left: 5%;
+}
+.connect{
+    color: white;
+    margin-top: 0.5%;
+    margin-left: 5%;
+}
+.social_media{
+    width: 110px;
+    height: 50px;
+    margin-top: 1px;
+    margin-left: 73px;
+}
+.comp {
+    margin-top: -160px;
+    margin-left: 515px;
+    font-size: 18px;
+}
+.headings a{
+    margin-top: -1%;
+    margin-left: 34%;
+    line-height: 30px;
+    color: white;
+    text-decoration: none;
+}
+.community{
+    margin-top: -246px;
+    margin-left: 64%;
+    font-size: 17px;
+}
+.comm_headings a{
+    margin-left: 64.3%;
+    line-height: 30px;
+    color: white;
+    text-decoration: none;
+}
+.get{
+    margin-top: -6.5%;
+    margin-left: 86%;
+    font-size: 19px;
+}
+.get_headings a {
+    margin-left: 86%;
+    line-height: 30px;
+    color: white;
+    text-decoration: none;
+}
+.footer{
+    font-size: 17px;
+    line-height: 5px;
+    margin-top: 19px;
+    font: bolder;
+}
